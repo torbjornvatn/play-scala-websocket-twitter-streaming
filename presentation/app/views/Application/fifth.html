@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'Websockets' /}
+<div id="main">
+  <div id="body">
+    <div id="page">
+      <h1>( Play!, Scala, Java, Twitter Streaming API, Websockets ) => COOL</h1>
+      <h2><a>Hvorfor er Websockets så kult?</a></h2>
+      <p><ol>
+        <li>Data kan for første gang aktivt sendes frem og tilbake mellom server og nettleser via én kanal</li>
+        <li>Nettleserkode trenger ikke å simulere "push" med f.eks. long polling</li>
+        <li>Lett å sette opp demo</li>
+        <pre id="msg" class="note">
+        &lt;script&gt;
+          $(document).ready(function(){
+            ws = new WebSocket("ws://localhost:8008/websocket");
+            ws.onmessage = function(evt) { 
+              $("#msg").empty();
+              $("#msg").append(evt.data); 
+            };
+            ws.onclose = function() {};
+            ws.onopen = function() {};
+          });
+        &lt;/script&gt;</pre>
+      </ol></p>
+      <a class ="back" href="@{Application.fourth}">←</a>
+    </div>
+  </div>
+</div>
+          
+        

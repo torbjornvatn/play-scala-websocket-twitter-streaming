@@ -1,0 +1,6 @@
+Location(london):
+    name: 'London'
+    latLan: '-0.563000,51.261318,0.280360,51.686031'
+Location(sanfran):
+    name: 'San Fransisco'
+    latLan: '-122.75,36.8,-121.75,37.8'

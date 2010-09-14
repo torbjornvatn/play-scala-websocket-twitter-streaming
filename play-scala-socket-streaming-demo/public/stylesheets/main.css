@@ -1,0 +1,28 @@
+html { height: 100% }
+body { height: 100%; margin: 0px; padding: 0px; background:gray; }
+#map { height: 500px; width:800px; margin-left: 50px }
+#button { margin-left:50px; margin-top:20px; margin-bottom: 20px }
+#locations { margin-left:50px; margin-top:20px; margin-bottom: 20px }
+
+.icheckboxui {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor:pointer;
+    display:inline-block;
+	margin-left:50px;
+    width:94px;
+    height:26px;
+	line-height:26px;
+    background: #2472d4 url('/public/images/form-checkbox.png') 0 0 no-repeat;
+}
+.icheckboxui.off {
+    background-position: 100% 0;
+}
+.icheckboxui.active {
+    background-position: 0 100%;
+}
+.icheckboxui.active.off {
+    background-position: 100% 100%;
+}

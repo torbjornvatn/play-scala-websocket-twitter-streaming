@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Streaming' /}
+<div id="main">
+  <div id="body">
+    <div id="page">
+      <h1>( Play!, Scala, Java, Twitter Streaming API, Websockets ) => COOL</h1>
+      <h2><a>Hvorfor er Twitter Streaming API så kult?</a></h2>
+      <p><ol>
+        <li>Man får tilgang til twitters timeline (firehose) i sanntid</li>
+        <code> curl -d @name_of_json_file http://stream.twitter.com/1/statuses/filter.json -uUSERNAME:PASSWORD</code>      
+        <li>Man kan filtrere med @username, søkeord og lokasjoner ++</li>
+        <li>Twitterapplikasjoner trenger ikke lenger "pulle" flere ganger i minuttet. Oppdateringer kan stream'es og filtreres</li>
+      </ol></p>
+      <a class ="forth" href="@{Application.fifth}">→</a>
+      <a class ="back" href="@{Application.third}">←</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Play!' /}
+<div id="main">
+  <div id="body">
+    <div id="page">
+      <em></em>
+      <h1>( Play!, Scala, Java, Twitter Streaming API, Websockets ) => COOL</h1>
+      <h2><a>Hvorfor er Play! så kult?</a></h2>
+      <p><ol>
+        <li>Endringer rekompileres og hot-reloades automagisk</li>
+        <code>⌘+R i browseren </code>
+        <li>Bra modulsystem for å legge til ekstra funksjonalitet</li>
+        <code>
+          play install scala && play install netty &&
+          play new killerapp --with scala,netty
+        </code>
+        <li>Detaljerte feilmeldinger rett i browseren</li>
+        <img style="height:38%" src="public/images/error_message.jpg"/>
+      </ol></p>
+      <a class ="forth" href="@{Application.second}">→</a>
+    </div>
+  </div>
+</div>
+          
+        

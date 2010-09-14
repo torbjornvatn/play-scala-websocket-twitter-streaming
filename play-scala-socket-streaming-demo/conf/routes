@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.map
+GET     /location/{selectedLocation}            Application.map
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /admin                                  module:crud
+*       /{controller}/{action}                  {controller}.{action}

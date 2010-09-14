@@ -1,0 +1,29 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+  
+  <form action="@{Application.choose()}" method="POST">
+    <div id="locations">
+      <select id="locationSelection" name="locationSelection" onchange='this.form.submit()' >
+        #{list items:possibleLocations, as:'possibleLocation'}
+          <option value="${possibleLocation}">${possibleLocation}</option>
+        #{/list}
+      </select>
+      <label for="locationSelection">Choose a location to stream from</label>
+      <br/>
+    </div> 
+  </form>
+  
+  <div class="scroll iscroll form">
+    <form>
+      <input class="icheckbox" type="checkbox" id="remember" name="remember" value="1"/> 
+      <label for="remember" id="socketStatus">Websocket closed</label> 
+    </form> 
+  </div>
+  
+  <input id="button" type="button" value="Show me some tweets" onclick="startStream()" />
+  
+  <div id="map"></div>
+  
+  <script>
+      $("#locationSelection").selectOptions("${selectedLocation}");
+  </script>
