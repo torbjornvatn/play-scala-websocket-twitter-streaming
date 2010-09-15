@@ -1,8 +1,8 @@
-html { height: 100% }
-body { height: 100%; margin: 0px; padding: 0px; background:gray; }
-#map { height: 500px; width:800px; margin-left: 50px }
-#button { margin-left:50px; margin-top:20px; margin-bottom: 20px }
-#locations { margin-left:50px; margin-top:20px; margin-bottom: 20px }
+html { height: 90% }
+body { height: 100%; margin: 0px; padding: 0px; background-image:url('/public/images/tallWallpaper.jpg'); background-repeat: repeat-x;}
+#map { height: 500px; width:800px; margin-left: 300px }
+#button { margin-left:300px; margin-top:20px; margin-bottom: 20px }
+#locations { margin-left:300px; margin-top:20px; margin-bottom: 20px }	
 
 .icheckboxui {
     border-radius: 4px;
@@ -11,7 +11,7 @@ body { height: 100%; margin: 0px; padding: 0px; background:gray; }
     -webkit-border-radius: 4px;
     cursor:pointer;
     display:inline-block;
-	margin-left:50px;
+	margin-left:300px;
     width:94px;
     height:26px;
 	line-height:26px;
